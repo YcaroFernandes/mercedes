@@ -23,8 +23,11 @@ public class Config {
 	@Before
 	public void setUp() throws IOException {
 
+		// Chrome
 		System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver");
 		this.driver = new ChromeDriver();
+		
+		// Firefox
 //		System.setProperty("webdriver.gecko.driver", "/usr/local/bin/geckodriver");
 //		this.driver = new FirefoxDriver();
 		driver.get(baseURL);
