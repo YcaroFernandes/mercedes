@@ -1,4 +1,4 @@
-package utils;
+package main.java.utils;
 
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;

@@ -1,12 +1,13 @@
-package purchasetest;
+package main.java.purchasetest;
 
 import org.junit.Before;
 import org.junit.Test;
 
-import pageobject.Cart;
-import pageobject.CollectionHomePage;
-import pageobject.Payment;
-import utils.Config;
+import main.java.pageobject.Cart;
+import main.java.pageobject.CollectionHomePage;
+import main.java.pageobject.Payment;
+import main.java.utils.Config;
+
 
 public class PurchaseFlow extends Config {
 
