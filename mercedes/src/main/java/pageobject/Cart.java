@@ -146,7 +146,6 @@ public class Cart extends Config {
 
 	public void submitLogin() throws InterruptedException {
 		
-		Thread.sleep(2000);
 		loginGuess.click();
 	}
 	
@@ -219,7 +218,6 @@ public class Cart extends Config {
 	
 	public void salutationMrRadioButton2() throws InterruptedException {
 
-		Thread.sleep(2000);
 		salutationMrRadioButtonDelivery.click();
 	}
 
@@ -264,7 +262,6 @@ public class Cart extends Config {
 	}
 
 	public void continueToPayment() throws InterruptedException {
-		Thread.sleep(2000);
 		continueToPayment.click();
 	}
 	
