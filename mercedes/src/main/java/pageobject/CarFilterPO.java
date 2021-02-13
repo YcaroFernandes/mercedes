@@ -1,12 +1,17 @@
 package main.java.pageobject;
 
 import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.PrintStream;
+import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
 import org.apache.commons.io.FileUtils;
+import org.junit.experimental.theories.Theories;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
@@ -108,7 +113,7 @@ public class CarFilterPO extends Config {
 
 	}
 
-	public void takeScreenshot(WebDriver driver) throws InterruptedException {
+	public void takeScreenshot(WebDriver driver) throws InterruptedException, FileNotFoundException {
 
 		executor.executeScript("arguments[0].scrollIntoView();", nextSlideButton);
 
@@ -130,7 +135,7 @@ public class CarFilterPO extends Config {
 			} catch (IOException e) {
 				e.printStackTrace();
 			}
-
+			Thread.sleep(2000);
 			wait.until(ExpectedConditions.elementToBeClickable(nextSlideButton));
 			nextSlideButton.click();
 
@@ -139,6 +144,13 @@ public class CarFilterPO extends Config {
 		System.out.println(all_elements_text);
 		
 		System.out.println("O carro com maior valor e:" + Collections.max(all_elements_text));
+		System.out.println("O carro com menor valor e:" + Collections.min(all_elements_text));
+
+		
+		try(PrintWriter out = new PrintWriter("texts.txt")  ){
+		    out.println(Collections.max(all_elements_text));
+		    out.println(Collections.min(all_elements_text));
+		}
 
 	}
 }
