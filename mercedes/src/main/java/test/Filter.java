@@ -27,7 +27,6 @@ public class Filter extends Config {
 		
 		collectionpageobject.selectDiesel(driver);
 		collectionpageobject.takeScreenshot(driver);
-		
 
 	}
 }
