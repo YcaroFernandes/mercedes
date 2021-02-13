@@ -21,3 +21,5 @@ Add the chrome driver and firefox driver to the system path
 - To run the test on a browser other than chrome, make a change to the class: Config.class.
 Comment out the lines containing the Chrome information and remove the uncomment where the chrome information contains.
 
+- At the end of the run, the prints are generated inside the project folder.
+
