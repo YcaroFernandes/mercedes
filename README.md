@@ -23,3 +23,5 @@ Comment out the lines containing the Chrome information and remove the uncomment
 
 - At the end of the run, the prints are generated inside the project folder.
 
+- A texts.txt file will be generated with the result of the highest value and the lowest value of the cars listed.
+
