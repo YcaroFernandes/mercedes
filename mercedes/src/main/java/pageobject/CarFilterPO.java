@@ -147,8 +147,8 @@ public class CarFilterPO extends Config {
 		System.out.println("O carro com menor valor e:" + Collections.min(all_elements_text));
 
 		try(PrintWriter out = new PrintWriter("texts.txt")  ){
-		    out.println(Collections.max(all_elements_text));
-		    out.println(Collections.min(all_elements_text));
+		    out.println("O carro com maior valor e:" + Collections.max(all_elements_text));
+		    out.println("O carro com menor valor e:" + Collections.min(all_elements_text));
 		}
 
 	}

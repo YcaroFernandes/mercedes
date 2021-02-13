@@ -1,2 +1,2 @@
-£30,335
-£24,435
+O carro com maior valor e:£30,335
+O carro com menor valor e:£24,435
