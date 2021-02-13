@@ -1,17 +1,18 @@
-package main.java.pageobject;
+package test;
 
 import org.junit.Before;
 import org.junit.Test;
 
+import main.java.pageobject.CarFilterPO;
 import main.java.utils.Config;
 
-public class PurchaseFlow extends Config {
+public class Filter extends Config {
 
-	Filter collectionpageobject;
+	CarFilterPO collectionpageobject;
 
 	@Before
 	public void setup() {
-		collectionpageobject = new Filter(driver);
+		collectionpageobject = new CarFilterPO(driver);
 
 	}
 

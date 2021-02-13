@@ -21,7 +21,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import main.java.utils.Config;
 
-public class Filter extends Config {
+public class CarFilterPO extends Config {
 
 	@FindBy(css = "button.vmos_CwgJh.vmos_1nenx.vmos_Kn8Xv")
 
@@ -65,7 +65,7 @@ public class Filter extends Config {
 
 	private JavascriptExecutor executor;
 
-	public Filter(WebDriver driver) {
+	public CarFilterPO(WebDriver driver) {
 
 		PageFactory.initElements(driver, this);
 		wait = new WebDriverWait(driver, 15, 50);

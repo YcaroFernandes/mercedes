@@ -130,7 +130,7 @@ public class CarFilterPO extends Config {
 			} catch (IOException e) {
 				e.printStackTrace();
 			}
-
+			Thread.sleep(2000);
 			wait.until(ExpectedConditions.elementToBeClickable(nextSlideButton));
 			nextSlideButton.click();
 
